@@ -1,0 +1,7 @@
+Hadoop is bigdata tool
+Hadoop is good for analytics
+Sark is meant for only processing
+Spark is purely depending on IN_MEMORY processing
+Hadoop and Spark are going to rule bigdata market
+thanks Hadoop
+thanks Bigdata

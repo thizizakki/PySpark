@@ -1,0 +1,104 @@
+Learning Spark is fun and very powerful
+PySpark lets you process big data in memory
+DataFrames are optimized for large datasets
+Spark transformations are lazy by default
+Actions like collect trigger the execution
+Map and reduce are the classic RDD tools
+Broadcast variables reduce data movement
+Shuffles are expensive in distributed systems
+You can cache RDDs to reuse in later steps
+Spark SQL integrates seamlessly with Hive
+Filter and select are DataFrame operations
+Window functions enable advanced analytics
+Partitioning helps with data distribution
+FlatMap can produce multiple outputs per line
+GroupBy followed by agg is common pattern
+Joins can be expensive if not handled wisely
+Cluster managers like YARN help Spark scale
+Checkpointing helps in fault-tolerant systems
+RDDs are the low-level API in Spark engine
+SparkSession is the entry point in PySpark
+You can read CSV JSON Parquet Avro formats
+Structured Streaming enables real-time apps
+Schema inference can save you manual effort
+Spark is written in Scala but supports Python
+The DAG is built before execution starts
+Spark works on local or cluster deployments
+SparkContext gives access to low-level API
+Spark is fast due to in-memory computation
+Operations in Spark are immutable in nature
+Resilient Distributed Datasets = RDDs
+Data locality improves performance in Spark
+You can register DataFrames as SQL tables
+Catalyst optimizer plans efficient execution
+Tungsten engine handles code generation
+MLlib provides machine learning algorithms
+RDD transformations are narrow or wide
+Repartition increases the number of partitions
+Coalesce reduces the number of partitions
+PartitionBy is used during file writing
+Use cache or persist to keep data in memory
+Memory management is important for tuning
+Executors run the actual Spark tasks
+Spark jobs have multiple stages and tasks
+Wide dependencies require data shuffling
+HDFS and S3 are common storage backends
+Read operations are lazy in Spark
+Actions like count, show trigger execution
+Custom UDFs allow for flexible transformations
+Python UDFs are slower than native functions
+Use Spark UI to debug jobs and performance
+Accumulator variables help in debugging logic
+You can broadcast small lookup tables
+Use explain() to view the logical plan
+Spark supports JDBC for reading databases
+collect() brings entire dataset to driver
+Take action returns limited number of rows
+RDDs are not schema-aware like DataFrames
+Schema evolution works better in Parquet
+Avoid using collect() on large datasets
+Spark supports columnar formats for speed
+Use sample() to draw random subset of data
+sampleBy() helps with stratified sampling
+DataFrames are row-based internally in Spark
+Use orderBy or sort to arrange rows
+Spark streaming uses micro-batching
+Structured streaming has lower latency
+Kafka is used as input source in streaming
+Watermarking handles late-arriving data
+Join conditions should be optimized properly
+Zip allows pairing elements from two RDDs
+You can use mapPartitions for custom logic
+Spark has transformations and actions clearly
+Always tune number of partitions for scaling
+Partition pruning reduces scan time in queries
+Avoid skewed joins by salting the keys
+SessionState tracks current Spark session info
+RDD lineage graph helps in debugging
+Debugging in distributed systems is tricky
+DataFrame API is faster than RDD API
+Explode is used to flatten array-type fields
+Pivot tables can be created using groupBy
+Python APIs wrap underlying Java methods
+Parquet is preferred for columnar storage
+Use write.partitionBy to save partitioned data
+Column objects allow for chaining transformations
+Always filter early to reduce data transfer
+Use distinct() to get unique values from DF
+SQLContext is deprecated in Spark 3.x
+Broadcast joins are great for small dimension tables
+countByValue returns count per distinct value
+Use reduce to aggregate values in RDDs
+Always prefer DataFrames when possible
+Avoid collecting large RDDs to the driver
+Use zipWithIndex for row numbering
+Each executor can run multiple tasks in parallel
+Driver node is the coordinator in Spark apps
+Use randomSplit() for ML train/test split
+Use printSchema() to inspect data structure
+Parquet is splittable and supports predicate pushdown
+DataFrames are untyped in PySpark but typed in Scala
+collectAsMap returns key-value dict from pair RDD
+Show truncates long columns by default
+Chaining multiple transformations is efficient
+Spark is resilient and fault-tolerant

@@ -1,0 +1,44 @@
+Transformations
+---------------
+map - Applies a function to each element of the RDD
+flatMap - Also applies a function to each element
+| Input String      | map result                | flatMap result              |
+| ----------------- | ------------------------- | --------------------------- |
+| "spark is fast"   | `['spark', 'is', 'fast']` | `'spark'`, `'is'`, `'fast'` |
+| "big data"        | `['big', 'data']`         | `'big'`, `'data'`           |
+| **Output Format** | `[['...'], ['...']]`      | `['...', '...', '...']`     |
+
+filter - The filter() transformation is used to select elements that satisfy a condition (a boolean function).
+It returns a new RDD or DataFrame containing only the elements that return True when passed to the function.
+
+Example:
+rdd = sc.parallelize(["Spark", "Scala", "AI", "BigData", "ML"])
+long_words = rdd.filter(lambda x: len(x) > 4)
+print(long_words.collect())
+
+Output:
+['Spark', 'Scala', 'BigData']
+
+union
+intersection
+subtract
+sortBy
+groupByKey
+reduceByKey
+
+Actions
+--------------
+collect
+count
+saveAsTextFile
+mapValues
+
+| Command            | Type   | Description                              | Risk or Caution                  |
+| ------------------ | ------ | ---------------------------------------- | -------------------------------- |
+| `collect()`        | Action | Returns full dataset to driver as list   | ❗ Memory risk on large data    |
+| `count()`          | Action | Counts the number of elements in RDD     | ✅ Safe even on large datasets  |
+| `saveAsTextFile()` | Action | Writes RDD as text file(s) to given path | ❗ Path must not exist already  |
+
+
+
+

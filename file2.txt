@@ -1,0 +1,7 @@
+thanks Hadoop
+Hadoop HDFS is for storage
+Hadoop MR is for processing
+Hadoop is having diff distributions support
+Hadoop is good in market
+thanks Bigdata
+thanks Spark
