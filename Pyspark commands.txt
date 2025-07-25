@@ -25,6 +25,18 @@ subtract
 sortBy
 groupByKey
 reduceByKey
+coalesce
+repartition
+zip
+zipwithindex
+distinct
+mapPartitions
+keys
+values
+join
+leftOuterJoin
+rightOuterJoin
+fullOuterJoin
 
 Actions
 --------------
@@ -32,7 +44,9 @@ collect
 count
 saveAsTextFile
 mapValues
-
+take
+top
+takeOrdered
 | Command            | Type   | Description                              | Risk or Caution                  |
 | ------------------ | ------ | ---------------------------------------- | -------------------------------- |
 | `collect()`        | Action | Returns full dataset to driver as list   | ❗ Memory risk on large data    |
