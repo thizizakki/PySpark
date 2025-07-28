@@ -6,7 +6,7 @@ flatMap - Also applies a function to each element
 | ----------------- | ------------------------- | --------------------------- |
 | "spark is fast"   | `['spark', 'is', 'fast']` | `'spark'`, `'is'`, `'fast'` |
 | "big data"        | `['big', 'data']`         | `'big'`, `'data'`           |
-| **Output Format** | `[['...'], ['...']]`      | `['...', '...', '...']`     |
+|   Output Format   | `[['...'], ['...']]`      | `['...', '...', '...']`     |
 
 filter - The filter() transformation is used to select elements that satisfy a condition (a boolean function).
 It returns a new RDD or DataFrame containing only the elements that return True when passed to the function.
@@ -55,4 +55,16 @@ takeOrdered
 
 
 
+
+ SPARK STORAGE – PERSISTENCE LEVELS
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|   Persistence Level        |   Space used   |   CPU Time   |   IN_MEMORY Storage    |   DISK Storage   |   Comments                                                                    |
+| -------------------------- | -------------- | ------------ | ---------------------- | ---------------- | ----------------------------------------------------------------------------- |
+|   MEMORY _ONLY             | HIGH           | LOW          | YES                    | NO               | Stores RDD Partitions on IN_MEMORY alone.                                     |
+|   MEMORY_ONLY_SER          | LOW            | HIGH         | YES                    | NO               | Stores RDD Partitions on IN_MEMORY alone in a Serialized format.              |
+|   MEMORY_AND_DISK          | HIGH           | MEDIUM       | Some Portion           | Some Portion     | If Data is too much to fit in the Memory, some data spills into DISK as well. |
+|   MEMORY_AND_DISK_SER      | LOW            | HIGH         | Some Portion           | Some Portion     | Stores in Serialized format in MEMORY... rest of data spills into DISK.       |
+|                            |                |              |                        |                  | If data is so high.                                                           |   
+|   DISK_ONLY                | HIGH           | HIGH         | NO                     | YES              | Stores RDD Partitions on DISK alone.                                          |
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 

@@ -1,0 +1,10 @@
+How to access "Spark UI Page" in standalone cluster mode ?
+----------------------------------------------------------
+
+Stand alone cluster manager - Hadoop apace mesos
+http:///<<hostnameOfSparkMasterNode>>:4040
+
+errorData.cache() --> Here by default it will take "MEMORY ONLY"
+		      We cannot specify any other storage persistence level here.
+
+errorData.persisit(MEMORY_ONLY)
