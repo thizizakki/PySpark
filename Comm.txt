@@ -1,0 +1,56 @@
+spark-submit --class com.spark.core.LinesWithErrorStarting --master local LINES-WITH-STARTING-ERROR.jar Input.log SparkOutDir
+spark-submit --class com.spark.core.LinesWithErrorStarting --master local[3] LINES-WITH-STARTING-ERROR.jar Input.log SparkOutDir1
+spark-submit --class com.spark.core.LinesWithErrorStarting --master local[8] LINES-WITH-STARTING-ERROR.jar Input.log SparkOutDir2
+
+Note: local[*] → here * indicates number of CPU CORES
+
+
+spark-submit --class com.spark.core.LinesWithErrorStarting --master spark://ubuntu:7077 --deploy-mode client LINES-WITH-STARTING-ERROR.jar Input.log SparkOutputDir2
+
+NOTE: For the above Command to run, we need not to start SPARK DEAMONS...because
+
+In yarn client mode your driver program is running on the yarn client where you
+type the command to submit the spark application (may not be a machine in the yarn
+cluster). In this mode, although the drive program is running on the client machine, the
+tasks are executed on the executors in the node managers of the YARN cluster
+
+spark-submit --class com.spark.core.LinesWithErrorStarting --master spark://ubuntu:7077 --deploy-mode cluster LINES-WITH-STARTING-ERROR.jar Input.log SparkOutputDir3
+
+ERROR: Caused by: java.io.IOException: Failed to connect to ubuntu/127.0.0.1:7077
+
+NOTE: For the above Command to run,
+
+
+
+To run Spark job in a cluster mode there are 2 ways
+1. Yarn Client Mode  (YARN - Yet Another Resource Negotiator)
+2. Yarn Cluster Mode
+
+--------------------------------------------------------------
+|                     YARN CLIENT MODE                       |
+|                                                            |
+|  +-----------------------------------------+               |
+|  | ApplicationMaster                       |               |
+|  | DriverProgram                           |               |
+|  |                                         |               |
+|  |   ↑                                     |               |
+|  |   | spark-submit                        |               |
+|  +-----------------------------------------+               |
+--------------------------------------------------------------
+
+
+                   YARN CLUSTER MODE
+
+ Client Application
+ +-----------------------------------+
+ | spark-submit                      |
+ +-----------------------------------+
+             |
+             |
+             ↓
+ +-----------------------------------+
+ | ApplicationMaster                 |
+ | DriverProgram                     |
+ +-----------------------------------+
+
+
