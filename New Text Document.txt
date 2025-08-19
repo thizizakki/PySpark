@@ -1,0 +1,15 @@
+20101 | UnitedHealthGroup | 300000 | Hyderabad
+10201 | InfosysTechLtd | 700000 | Bangalore
+10301 | TataConsultancyServices | 320000 | Chennai
+10401 | CognizantTechnologiesServicesLtd | 123000 | Pune
+30501 | NtproTechnologiesLtd | 178000 | Mumbai
+10101 | UnitedHealthGroup | 200000 | Hyderabad
+10201 | InfosysTechLtd | 300000 | Bangalore
+10301 | TataConsultancyServices | 320000 | Pune
+40401 | CognizantTechnologiesServicesLtd | 123000 | Pune
+10501 | NtproTechnologiesLtd | 178000 | Mumbai
+10101 | UnitedHealthGroup | 500000 | Hyderabad
+10201 | InfosysTechLtd | 400000 | Bangalore
+50301 | TataConsultancyServices | 320000 | Chennai
+70401 | CognizantTechnologiesServicesLtd | 123000 | Pune
+10501 | NtproTechnologiesLtd | 178000 | Pune

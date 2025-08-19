@@ -1,0 +1,16 @@
+{"address": [{"hno": "1-41-165"}], "city": "newjersey", "dept": null, "name": "Martin", "sal": 80000}
+{"address": null, "city": "newyork", "dept": null, "name": "Mike", "sal": 75000}
+{"address": null, "city": "peru", "dept": "LOGISTICS", "name": "Andrew", "sal": 87000}
+{"address": null, "city": null, "dept": "HRD", "name": "Teena", "sal": 57000}
+{"address": "USA", "city": "elizabeth", "dept": null, "name": "clark", "sal": 92000}
+{"address": null, "city": "boston", "dept": null, "name": "Aneesh", "sal": 65000}
+{"address": null, "city": "atlanta", "dept": "TRANSPORT", "name": "chloe", "sal": 78000}
+{"address": null, "city": null, "dept": "MARKETING", "name": "Aakash", "sal": 77000}
+{"address": "USA", "city": "jerseycity", "dept": null, "name": "daniel", "sal": 82000}
+{"address": null, "city": "Vienna", "dept": null, "name": "Richard", "sal": 63000}
+{"address": null, "city": "Dornbirn", "dept": "IMMIGRATION", "name": "Faisal", "sal": 71000}
+{"address": null, "city": null, "dept": "FOREIGNTRADE", "name": "Justin", "sal": 59000}
+{"address": "UK", "city": "losangeles", "dept": null, "name": "Flexmala", "sal": 92000}
+{"address": null, "city": "chicago", "dept": null, "name": "Glenn", "sal": 53000}
+{"address": null, "city": "Dornbirn", "dept": "PUBLIC AFFAIRS", "name": "robert frost", "sal": 71000}
+{"address": null, "city": null, "dept": "CLINICAL", "name": "sabastian edward", "sal": 67000}
